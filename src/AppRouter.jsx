@@ -3,7 +3,9 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import { Navigation } from './components/Navigation'
 import { PokemosPage,HomePage,SearchPage } from './pages'
 
+
 export const AppRouter = () => {
+  
   return (
     <Routes>
         <Route path='/' element={<Navigation/>}>

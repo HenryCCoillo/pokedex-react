@@ -2,8 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export const CardPokemon = ({pokemon}) => {
+    const baseUrl = window.location.href;
   return (
-    <Link to={`/pokemon/${pokemon.id}`} className='card-pokemon'>
+    <Link to={`${baseUrl}/pokemon/${pokemon.id}`} className='card-pokemon'>
         <div className="card-img">
             <img src={pokemon.sprites.other.dream_world.front_default} 
             alt={pokemon.name} />

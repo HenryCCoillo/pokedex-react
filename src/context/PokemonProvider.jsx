@@ -37,7 +37,7 @@ export const PokemonProvider = ({ children }) => {
   // All Pokemons
   const getGlobalPokemons = async () => {
     const baseURL = "https://pokeapi.co/api/v2/";
-    const res = await fetch(`${baseURL}pokemon?limit=400&offset=0`);
+    const res = await fetch(`${baseURL}pokemon?limit=100&offset=0`);
     const data = await res.json();
 
     const promises = data.results.map(async (pokemon) => {
